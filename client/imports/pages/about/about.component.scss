@@ -1,0 +1,48 @@
+h2 {
+  font-weight: 50;
+}
+
+.col-xs {
+  margin: 0 20px;
+  &:first-child {
+    margin: 0 20px 0 80px;
+  }
+  &:last-child {
+    margin: 0 80px 0 20px;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  p {
+    color: #64727d;
+    font-size: 0.9em;
+    &.description {
+      font-size: 1.05em;
+    }
+    &.highlight {
+      text-transform: uppercase;
+    }
+    &.specifications {
+      color: black;
+      margin: 14px 0 7px;
+    }
+  }
+  button {
+    border: none;
+    background: rgba(0,0,0,0.75);
+    color: white;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    padding: 8px 25px;
+    letter-spacing: 2px;
+  }
+}
+
+.maps {
+  height: 375px;
+  background: black;
+  #map {
+    height: 375px;
+    width: 100%;
+  }
+}

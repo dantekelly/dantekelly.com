@@ -1,0 +1,27 @@
+.home {
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 30px;
+    font-weight: 500;
+    font-size: 40px;
+  }
+  p {
+    text-align: center;
+    margin: 0 auto;
+    color: black;
+    opacity: 0.5;
+    font-size: 20px;
+  }
+  .divider {
+    width: 150px;
+    height: 1px;
+    background: black;
+    opacity: 0.5;
+    margin: 25px auto;
+  }
+  i {
+    text-align: center;
+    display: block;
+  }
+}

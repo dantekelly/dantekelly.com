@@ -1,0 +1,47 @@
+<div id="about" class="full about">
+  <div class="row">
+    <div class="col-xs">
+      <h2> App Development </h2>
+      <p class="description"> I use a top class development stack designed to promote efficiency, scalability, and uniformity to create fast and beautiful android and iOS applications. </p>
+      <p class="highlight"> I use </p>
+      <p class="specifications"> UI / UX Design, Angular 2, Meteor, Ionic, SCSS, Third-party Integrations. </p>
+      <button> Learn More </button>
+    </div>
+    <div class="col-xs">
+      <h2> Full-Stack Development </h2>
+      <p class="description"> I use a top class development stack designed to promote efficiency, scalability, and uniformity to create fast and beautiful android and iOS applications. </p>
+      <p class="highlight"> I use </p>
+      <p class="specifications"> UI / UX Design, Angular 2, Meteor, SCSS, Third-party Integrations. </p>
+      <button> Learn More </button>
+    </div>
+    <div class="col-xs">
+      <h2> Marketing & Advertising </h2>
+      <p class="description"> I use a top class development stack designed to promote efficiency, scalability, and uniformity to create fast and beautiful android and iOS applications. </p>
+      <p class="highlight"> I use </p>
+      <p class="specifications"> High-Converting Capture Pages, Mass SMS, Facebook Targeting, Viral Video Advertisement, Public Relations, Email Marketing, Social Media Marketing. </p>
+      <button> Learn More </button>
+    </div>
+  </div>
+</div>
+
+<div id="maps" class="maps">
+  <p> Want to grab a coffee? <i class="fa fa-angle-down" aria-hidden="true"></i> </p>
+  <div id="map"></div>
+</div>
+
+<script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvBfKVY-nAe5iSvYidIgOVa9vLkhiyyoI&callback=initMap">
+    </script>
