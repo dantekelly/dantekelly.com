@@ -5,7 +5,8 @@ import {Router} from '@angular/router';
 import template from './app.component.html';
 import style from './app.component.scss';
 
-import * as $ from 'jquery';
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app',
@@ -15,22 +16,21 @@ import * as $ from 'jquery';
 
 export class AppComponent {
   constructor(private router: Router) {
-    var newnew = ['/home', '/about', '/services', '/portfolio', '/news']
-    var delay = 500; // delay in milliseconds
+    var routes = ['/home', '/about', '/services', '/portfolio', '/news']
 
     $(window).bind('mousewheel DOMMouseScroll', function(event){
-      var newloops = newnew.indexOf(router.url);
+      var currentRoute = routes.indexOf(router.url);
       this.resizeTO = setTimeout(function() {
         if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
             // scroll up
-            if (newloops < newnew.length-1) {
-              router.navigateByUrl(newnew[newloops+1]);
+            if (currentRoute < routes.length-1) {
+              router.navigateByUrl(routes[currentRoute+1]);
             }
         }
         else {
             // scroll down
-            if (newloops > 0) {
-              router.navigateByUrl(newnew[newloops-1]);
+            if (currentRoute > 0) {
+              router.navigateByUrl(routes[currentRoute-1]);
             }
         }
       }, 250);
